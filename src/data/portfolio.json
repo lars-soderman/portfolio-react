@@ -1,0 +1,270 @@
+{
+  "header":{
+     "heading1":"Portfolio: Lars Söderman",
+     "heading2":"Frontend developer",
+     "heading3":"+ digital designer",
+     "imageSrc":"/resources/IMG_1451_3-S.jpg",
+     "alt":"Picture of me",
+     "text":"I'm a frontend developer with a background in graphic design. I love making awesome interfaces. I'm really into ux, research, data, user centered design, animation, but most of all – building things. I'm pretty new to coding but let me tell you it's a love story! 😍"
+  },
+  "projects-prototype":{
+     "type":[
+        "featured",
+        "more",
+        "non-frontend",
+        "thoughts"
+     ],
+     "title":"",
+     "thumb":"",
+     "alt":"",
+     "text":"",
+     "tags":[
+        
+     ],
+     "link":""
+  },
+  "projects":{
+     "featured":[
+        {
+           "title":"Happy Thoughts",
+           "thumb":"./resources/thumbs/happy-thoughts-thumb.png",
+           "text":"Like a little twitter of pure positivity. This simple project taught me a lot about POSTing to an api, and also about useEffect and React hooks in general",
+           "tags":[
+              "React",
+              "React hooks",
+              "GET",
+              "POST"
+           ],
+           "link":"https://github.com/lars-soderman/project-happy-thoughts"
+        },
+        {
+           "title":"React Native movies",
+           "thumb":"./resources/thumbs/movies-native-thumb.png",
+           "text":"For my first React Native app project I made a native version of a previous project that fetches and displays current movie releases. I learned a lot about React Navigation in this project.",
+           "tags":[
+              "React Native",
+              "Expo",
+              "React hooks",
+              "Styled Components"
+           ],
+           "link":"https://github.com/lars-soderman/project-react-native-app"
+        },
+        {
+           "title":"Movies project",
+           "thumb":"./resources/thumbs/movies-thumb.png",
+           "text":"This is a pair programming React project where we buillt an app that fetches movie data from an api, and displays that on a separate page. This project taught me a lot about React Router and useEffect, among other things.",
+           "tags":[
+              "React",
+              "React Router",
+              "useEffect",
+              "Pair-programming"
+           ],
+           "link":"https://github.com/lars-soderman/project-movies"
+        },
+        {
+           "title":"Super Secret Side Hustle",
+           "thumb":"./resources/thumbs/mystery-project-thumb.png",
+           "text":"I’m designing and frontend developing a React Native MVP for a start-up. Learning a lot from working with a real team and a backend developer. Can’t show code or design here yet, but get in touch and I'll show you!",
+           "tags":[
+              "React Native",
+              "Expo",
+              "React-svg",
+              "React Navigation"
+           ],
+           "link":""
+        },
+        {
+           "title":"Survey",
+           "thumb":"./resources/thumbs/survey-thumb.png",
+           "text":"React multi step form. All question data is stored in a single variable. You can also create your own survey with different input types.",
+           "tags":[
+              "React",
+              "React hooks",
+              "useState",
+              "CSS"
+           ],
+           "link":"https://github.com/lars-soderman/project-survey"
+        },
+        {
+           "title":"Weather-app",
+           "thumb":"./resources/thumbs/weather-app.png",
+           "text":"A web app using browser geo-location API, Openweather API and Location IQ API for reverse geo-location.",
+           "tags":[
+              "JavaScript",
+              "HTML",
+              "CSS",
+              "API:s"
+           ],
+           "link":"https://github.com/lars-soderman/kitten-weather"
+        },
+        {
+           "title":"Music releases",
+           "thumb":"./resources/thumbs/music-releases-thumb.png",
+           "text":"My first react-project! A list of recently released singles and albums from Spotify.",
+           "tags":[
+              "React",
+              "Components",
+              "HTML",
+              "CSS",
+              "Pair-programming"
+           ],
+           "link":"https://github.com/lars-soderman/project-music-releases"
+        }
+     ],
+     "more":[
+         {
+         "title":"Chat bot",
+         "thumb":"./resources/thumbs/chat-bot.png",
+         "text":"In need of kitten? Let this excentric bot help you!",
+         "tags":[
+            "JavaScript",
+            "HTML",
+            "CSS"
+         ],
+         "link":"https://github.com/lars-soderman/project-chatbot"
+         },
+         {
+         "title":"News site",
+         "thumb":"./resources/thumbs/news-site.png",
+         "text":"Responsive news site layout using flexbox and css grid.",
+         "tags":[
+            "Responsive design",
+            "CSS grid",
+            "HTML",
+            "CSS",
+            "Flexbox",
+            "Lottie animation",
+            "Cute kittens"
+         ],
+         "link":"https://github.com/lars-soderman/project-news-site"
+         },
+        {
+           "title":"Guess who",
+           "thumb":"./resources/thumbs/news-site.png",
+           "text":"Interactive version of this classic board game!",
+           "tags":[
+              "JavaScript"
+           ],
+           "link":"https://nostalgic-wright-b748ff.netlify.app/"
+        },
+        {
+           "title":"Landing page",
+           "thumb":"./resources/thumbs/news-site.png",
+           "text":"The task this week was to build a business site landing page with a form and interactive accordion",
+           "tags":[
+              "HTML",
+              "CSS",
+              "JavaScript"
+           ],
+           "link":"https://nostalgic-wright-b748ff.netlify.app/"
+        }
+     ],
+     "thoughts":[
+      {
+         "title":"From designer to developer",
+         "thumb":"./resources/thumbs/developer-to-designer.png",
+         "text":"My reflections on switching career from designer to developer",
+         "link":"https://lars-soderman.medium.com/from-designer-to-developer-4493fc998089"
+      }
+        
+     ],
+     "nonFrontend":[
+        {
+           "title":"BookBeat Kids",
+           "thumb":"./resources/thumbs/bbk-thumb.png",
+           "text":"This is the story of a pretty intense and fun school project i did at Berghs upgrade - digital design 2019. It was about defining a potential new service.",
+           "tags":[
+              "UX design",
+              "Service design",
+              "Workshop facilitation",
+              "Logo design",
+              "Animation"
+           ],
+           "link":"./projects/bookbeat-kids.html"
+        },
+        {
+           "title":"Bikelab",
+           "thumb":"./resources/thumbs/bikelab-thumb.png",
+           "text":"Another school project, kind of in the product design space. In case you hadn't guessed – it has to do with mountainbikes!",
+           "tags":[
+              "Research",
+              "Service design",
+              "Data nerding",
+              "Wireframing",
+              "Prototyping",
+              "Testing"
+           ],
+           "link":"./projects/bikelab.html"
+        }
+     ]
+  },
+  "skills":{
+     "tech":[
+        "JavaScript",
+        "React",
+        "React Hooks",
+        "React Native",
+        "HTML",
+        "CSS",
+        "Flexbox",
+        "CSS Grid",
+        "API:s",
+        "Git",
+        "Accessibility",
+        "Redux"
+     ],
+     "soon":[
+        "Node.js",
+        "Mongo DB",
+        "Python",
+        "Svelte",
+        "Flutter",
+        "Vue",
+        "TDD"
+     ],
+     "toolbox":[
+        "Postman",
+        "Netlify",
+        "Illustrator",
+        "Figma",
+        "Keynote",
+        "Expo",
+        "Slack"
+     ],
+     "more":[
+        "Digital design",
+        "Branding",
+        "UX design",
+        "Product design",
+        "Concept development",
+        "Working agile",
+        "Motion graphics"
+     ]
+  },
+  "socialMedia":[
+     {
+        "name":"GitHub",
+        "link":"https://github.com/lars-soderman",
+        "icon":"/resources/github.svg",
+        "alt":"GitHub"
+     },
+     {
+        "name":"LinkedIn",
+        "link":"https://www.linkedin.com/in/lars-soderman/",
+        "icon":"/resources/linkedin.svg",
+        "alt":"LinkedIn"
+     },
+     {
+        "name":"Stack Overflow",
+        "link":"https://stackoverflow.com/users/14960150/lars-s%c3%b6derman",
+        "icon":"/resources/stack-overflow.svg",
+        "alt":"Stack Overflow"
+     },
+     {
+        "name":"E-mail",
+        "link":"mailto: lars.soderman@gmail.com",
+        "icon":"/resources/email.svg",
+        "alt":"Email me"
+     }
+  ]
+}

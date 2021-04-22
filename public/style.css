@@ -1,0 +1,538 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --primary-red: #fd8383;
+  --primary-green: #49b4b4;
+  --font-primary: "Inter", sans-serif;
+  /* --font-mono: 'Inter', sans-serif; */
+  --font-mono: "Roboto Mono", monospace;
+  /* --font-primary: 'Roboto', sans-serif; */
+  /* transition: all .4s ease; */ /*  <-- That would have been fun but i suppose it would not be great for performance?*/
+  /* border: 1px solid pink; */
+}
+
+body {
+  background: rgb(247, 247, 247);
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.container.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  text-align: center;
+}
+
+p {
+  font-family: var(--font-primary);
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+section {
+  padding: 1px 4px 30px;
+}
+
+/* HEADER STUFF */
+.social-media-icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+}
+
+.social-media-icons img {
+  width: 35px;
+  margin: 8px;
+  opacity: 0.8;
+  transition: all 0.1s ease;
+}
+
+.social-media-icons img:hover {
+  opacity: 1;
+  filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.1));
+  transform: scale(1.1);
+}
+
+.social-media-icons.bottom {
+  justify-content: center;
+  margin: 36px;
+}
+
+header {
+  background-image: url(resources/header-bg.svg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 350px;
+  padding: 8px;
+  z-index: 0;
+}
+
+.lars-pic {
+  display: flex;
+  justify-content: flex-end;
+  transform: translate(-80px, -40%);
+}
+
+.lars-pic-wrapper {
+  width: 180px;
+  height: auto;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 46%;
+  border: 8px solid white;
+  transform: rotate(-25deg) translate(0, 50%);
+  z-index: 1;
+}
+
+.lars-pic-wrapper img {
+  transform: scale(1.1) rotate(25deg);
+  width: 100%;
+}
+
+header .title {
+  margin: 16px;
+}
+
+header span {
+  font-family: var(--font-mono);
+  font-weight: 500;
+}
+
+header h1,
+header h2,
+header p {
+  font-family: var(--font-mono);
+  text-align: left;
+  font-weight: 400;
+  color: white;
+  margin: 0px;
+  font-size: 22px;
+}
+
+header h1 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+header h2 {
+  font-size: 52px;
+  line-height: 1;
+  font-weight: 300;
+  max-width: 450px;
+}
+
+/* MAIN SECTION */
+
+.intro {
+  background-image: url(/resources/bg-balls.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.intro h4 {
+  font-weight: 400;
+  margin: 0 24px;
+  line-height: 1.4;
+}
+
+.intro p {
+  margin: 130px 24px 90px;
+}
+
+section > h2 {
+  background: var(--primary-green);
+  padding: 0 8px;
+  line-height: 1;
+  color: white;
+  width: fit-content;
+  margin: 40px auto;
+}
+
+section h3 {
+  background: var(--primary-red);
+  padding: 0 8px;
+  line-height: 1.0;
+  color: white;
+  width: fit-content;
+  margin: 48px auto 16px auto;
+  transition: all 0.1s ease;
+}
+
+section .project h3 {
+  background: #FD838390;
+
+}
+
+/* PROJECTS */
+
+.project.card,
+.more .project {
+  background: white;
+  padding-bottom: 12px;
+  margin-bottom: 66px;
+  width: 100%;
+  transition: all 0.08s ease-out;
+}
+
+.project.card:hover,
+.more .project:hover {
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+  transform: translate(0, -4px) scale(1.02);
+}
+
+.project.card img {
+  transition: all 1s ease-in-out;
+}
+
+.project.card:hover img {
+  transform: scale(1.05);
+}
+
+.project.card:hover p {
+  text-decoration: underline;
+}
+
+.project.card:hover h3 {
+  background: white;
+  color: var(--primary-red);
+  box-shadow: 0px 0px 60px var(--primary-red);
+}
+
+.project.card.empty {
+  height: 0;
+  background: none;
+  box-shadow: none;
+}
+
+.project.card p {
+  margin: 8px 0;
+  color: var(--primary-green);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.more .project {
+  margin-bottom: 12px;
+}
+
+.thumbnail {
+  position: relative;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.thumbnail h3 {
+  font-family: Helvetica, sans-serif;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  width: fit-content;
+  padding: 4px 8px;
+  margin: 0;
+  font-size: 36px;
+  color: white;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+li {
+  font-family: var(--font-mono);
+  list-style: none;
+  line-height: 1.7;
+}
+
+ul.comma-list {
+  justify-content: center;
+  padding: 0 24px;
+}
+
+ul.comma-list li:not(:last-child):after {
+  content: ",";
+  padding-right: 8px;
+}
+
+ul.tags li {
+  background: var(--primary-red);
+  padding: 0 6px;
+  margin: 2px;
+  line-height: 1.2;
+  color: white;
+}
+
+.more .container .project h3 {
+  font-size: 24px;
+  color: black;
+  background: none;
+  width: auto;
+  text-align: left;
+  margin: 4px 0;
+  padding: 0;
+}
+
+.more .project {
+  background: rgb(244, 245, 243);
+  padding: 8px;
+}
+
+.img-placeholder {
+  width: auto;
+  min-height: 200px;
+  background: var(--primary-red);
+}
+
+.skills div {
+  margin: 0 auto;
+}
+
+.footer div {
+  margin: 0 auto;
+}
+
+footer {
+  background: var(--primary-green);
+  color: white;
+  text-align: center;
+  height: 300px;
+  padding: 24px 0;
+}
+
+footer h2 {
+  margin-bottom: 48px;
+}
+
+/* BREAKPOINTS */
+
+/* MOBILE LANDSCAPE */
+@media (min-width: 576px) {
+  p,
+  .comma-list li {
+    font-size: 16px;
+  }
+
+  .title {
+    margin-left: 36px;
+  }
+
+  .lars-pic-wrapper {
+    width: 220px;
+  }
+
+  .lars-pic {
+    transform: translate(-120px, -60%);
+  }
+  .skills > .container > div {
+    max-width: 30%;
+  }
+  .skills li {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .skills ul {
+    flex-direction: column;
+  }
+
+  .skills ul li:not(:last-child):after {
+    content: "";
+    padding-right: 0;
+  }
+
+  .social-media-icons {
+    margin-right: 80px;
+  }
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  p {
+    font-size: 20px;
+  }
+
+  h4,
+  h3 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 30px;
+    line-height: 1.9;
+  }
+
+  header {
+    height: 400px;
+  }
+
+  .title {
+    padding: 0 36px;
+  }
+
+  .title h1 {
+    font-size: 26px;
+  }
+
+  .title h2 {
+    margin-top: 24px;
+    font-size: 66px;
+  }
+
+  .title p {
+    font-size: 32px;
+  }
+
+  .lars-pic-wrapper {
+    width: 240px;
+  }
+
+  .lars-pic {
+    transform: translate(-80px, -100%);
+  }
+
+  .social-media-icons {
+    margin-right: 24px;
+  }
+
+  .social-media-icons img {
+    width: 45px;
+    margin: 8px;
+  }
+
+  .intro p {
+    margin: 20px 0;
+  }
+
+  .container {
+    padding: 0 36px;
+  }
+
+  section {
+    padding: 36px 0;
+  }
+
+  .project.card {
+    max-width: 48%;
+    margin-bottom: 36px;
+  }
+
+  .featured.projects {
+    background: var(--primary-green);
+  }
+
+  .project p {
+    font-size: 16px;
+    padding: 4px 8px;
+    line-height: 1.5;
+  }
+
+  .more p {
+    padding: 4px 0;
+  }
+
+  ul.tags li {
+    padding: 0 6px;
+    margin: 4px;
+    font-size: 16px;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 992px) {
+  .project.card {
+    max-width: 31%;
+  }
+
+  header {
+    height: 500px;
+  }
+
+  header .title {
+    margin-top: 66px;
+  }
+
+  header .title h2 {
+    margin-top: 36px;
+    font-size: 78px;
+  }
+  header .title p {
+    margin-top: 12px;
+  }
+  .social-media-icons {
+    margin-right: 0px;
+  }
+
+  .social-media-icons img {
+    width: 50px;
+    margin: 16px;
+  }
+
+  .lars-pic-wrapper {
+    width: 280px;
+  }
+
+  .lars-pic {
+    transform: translate(-80px, -100%);
+  }
+
+  .intro p {
+    margin: 100px 0;
+  }
+
+  section {
+    padding: 56px;
+  }
+}
+
+/* LARGE DESKTOP */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1040px;
+  }
+
+  header .title h2 {
+    max-width: unset;
+  }
+  .lars-pic {
+    transform: translate(-80px, -60%);
+  }
+
+  .intro p,
+  .intro ul {
+    padding: 0 80px;
+  }
+}
